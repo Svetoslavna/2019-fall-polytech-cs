@@ -4,7 +4,7 @@ currentFrame = 1
 def setup():
     global img1, img2, img3
     smooth()
-    size(1280,1280)
+    size(800,600)
     frameRate(12)
     img1 = loadImage("data/001.jpg")
     img2 = loadImage("data/002.jpg")
@@ -17,13 +17,13 @@ def draw():
         if isAnimate:
             if currentFrame == 1:
                 background(100)
-                image(img1, mouseX, mouseY)
+                image(img1, mouseX, mouseY, 280, 280)
             if currentFrame == 2:
                 background(100)
-                image(img2, mouseX, mouseY)
+                image(img2, mouseX, mouseY, 280, 280)
             if currentFrame == 3:
                 background(100)
-                image(img3, mouseX, mouseY)
+                image(img3, mouseX, mouseY, 280, 280)
             
             currentFrame += 1
             if (currentFrame > 3):
@@ -31,19 +31,19 @@ def draw():
         
         else:
             background(100)
-            image(img3, mouseX, mouseY, )
+            image(img3, mouseX, mouseY, 280, 280)
             
     if (pmouseX - mouseX < 0):
         if isAnimate:
             if currentFrame == 1:
                 background(100)
-                image(img3, mouseX, mouseY, 1280,1280)
+                image(img3, mouseX, mouseY, 280,280)
             if currentFrame == 2:
                 background(100)
-                image(img2, mouseX, mouseY, 1280,1280)
+                image(img2, mouseX, mouseY, 280,280)
             if currentFrame == 3:
                 background(100)
-                image(img1, mouseX, mouseY,1280,1280 )
+                image(img1, mouseX, mouseY,280,280 )
             
             currentFrame += 1
             if (currentFrame > 3):
@@ -51,7 +51,7 @@ def draw():
         
         else:
             background(100)
-            image(img3, mouseX, mouseY, 1280,1280)
+            image(img3, mouseX, mouseY, 280,280)
    
         
 def keyPressed():
