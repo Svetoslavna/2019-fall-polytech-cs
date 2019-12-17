@@ -9,4 +9,4 @@ def setup():
 def draw():
     global img
     background(100)
-    image(img , mouseX , mouseY)
+    image(img , mouseX , mouseY, 200, 200)
